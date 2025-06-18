@@ -9,7 +9,7 @@ Through my travels, I share how tradition and technology coexist in perfect harm
 
 ## 🧭 Site Navegation 
 
-- **Home** - Full-screen introdution with a video of Japan, designed to immerse visitors in the country before they dive into the content.
+- **Home** - Full-screen introdution with a video of Japan, designed to immerse visitors in the country before they dive into the content
 - **Technology** – Exploring Japan’s innovation in daily life  
 - **Food** – From street snacks to traditional multi-course meals  
 - **Architecture** – A mix of heritage and modern design  
