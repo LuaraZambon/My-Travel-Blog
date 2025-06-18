@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My Travel Blog</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <ul class="nav-links">
+                <li><a href="#home" onclick="scrollToSection(event, 'home')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection(event, 'about')">About</a></li>
+                <li><a href="#technology" onclick="scrollToSection(event, 'technology')">Technology</a></li>
+                <li><a href="#food" onclick="scrollToSection(event, 'food')">Food</a></li>
+                <li><a href="#architecture" onclick="scrollToSection(event, 'architecture')">Architecture</a></li>
+                <li><a href="#culture" onclick="scrollToSection(event, 'culture')">Culture</a></li>
+                <li><a href="#attractions" onclick="scrollToSection(event, 'attractions')">Attractions</a></li>
+                <li><a href="#store" onclick="scrollToSection(event, 'store')">Stores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home-container" id="home">
+        <video autoplay muted loop class="background-video">
+            <source src="pattern/5856567-uhd_4096_2160_24fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="home-content">
+            <h1>J A P A N</h1>
+            <p>A country where ancient traditions and futuristic technology live side by side. In this journey, I share my experiences through serene temples, vibrant cities, and unforgettable flavors.</p>
+        </div>
+    </section>
+    <section class="about-container" id="about">
+     <div class="about-content">
+       <div class="about-wrapper">
+        <div class="flag"></div>
+       <img src="pattern/img.jpg" alt="Minha foto" class="about-img" />
+       </div>
+      <div class="about-text">
+        <h1>About My Journey</h1>
+          <p>
+          My journey through Japan started not in the bustling capital of Tokyo, but in the soulful city of Osaka, a place that surprised me in the most wonderful ways. From the first step, I felt immersed in a culture where modern life and deep-rooted traditions coexist in harmony.
+          This blog is more than a travel diary; it’s a personal reflection of the unforgettable moments I lived in Japan. It’s about the neon lights and ancient shrines, about bustling market streets and quiet temples nestled in the hills. In this series, I’ll share how each city revealed a unique piece of Japan’s soul.</p>
+      </div>
+    </div>
+    </section>
+    <section class="tech-section" id="technology">
+        <div class="tech-header">
+            <h1>Technologies</h1>
+            <p>
+             Japan is known for seamlessly blending innovation with daily life. From robotics and high-speed trains to smart homes and AI-driven services, technology in Japan focuses on efficiency, precision, and user experience, often years ahead of global trends. 
+            </p>
+            </div>
+            <div class="tech-icons">
+                <div class="tech-box">
+                    <a href="https://www.railway-technology.com/projects/shinkansen-bullet-train/?cf-view">
+                    <i class="fa-solid fa-train"></i>
+                    <p>The Shinkansen symbolizes speed, safety, and Japan's mastery in high-speed rail innovation</p>
+                    </a>
+                </div>
+                <div class="tech-box">
+                    <a href="https://interacnetwork.com/robots-in-japan/">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Robots assist in daily tasks, from service to industry, Japan leads in automation and robotics.</p>
+                    </a>
+                </div>
+                <div class="tech-box">
+                    <a href="https://www.dorado-group.jp/blog/discover-the-best-electronics-store-experience-in-japan">
+                    <i class="fa-solid fa-shop"></i>
+                    <p>Japan’s konbini use tech like holograms to order coffee, self-checkout, and facial recognition, convenience at its smartest.</p>
+                    </a>
+                </div>
+                <div class="tech-box">
+                    <a href="https://www.boxofficepro.com/4dx-now-available-45-movie-screens-throughout-japan-kyushu-hokkaido/#:~:text=As%20of%20today%2C%20there%20are%2045%20screens%20in,other%20special%20effects%20that%20enhance%20the%20visuals%20on-screen.">
+                    <i class="fa-solid fa-film"></i>
+                    <p>Cinema 4D has become a popular tool among Japanese designers and animators for creating stunning 3D visuals.</p>
+                    </a>
+                </div>
+                <div class="tech-box">
+                    <a href="https://www.nippon.com/en/features/jg00034/#:~:text=Japan%E2%80%99s%20electronic%20toilets%20transform%20a%20normal%20trip%20to,for%20the%20appliance%20both%20in%20Japan%20and%20abroad.">
+                    <i class="fa-solid fa-restroom"></i>
+                    <p>Smart toilets with heated seats and built-in bidets turn hygiene into a futuristic experience.</p>
+                    </a>
+                </div>
+        </div>
+    </section>
+    <section class="food-section" id="food">
+    <h1>Japanese Food</h1>
+    <p class="subtitle">Through each bite, I discovered pieces of Japan, from cozy ramen bars in hidden alleys to sizzling okonomiyaki on quiet Kyoto streets.
+    Every meal told a story: warm, personal, and rich in tradition.
+    Tasting Japan wasn’t just about food, it was a journey of culture, comfort, and unforgettable moments.</p>
+    <div class="food-grid">
+      <div class="food-item">
+        <img src="pattern/ramen.png" alt="Ramen">
+        <h3>Ramen</h3>
+        <p>A Japanese noodle soup with broth, noodles, meat, and vegetables. Popular comfort food with many regional variation.</p>
+      </div>
+      <div class="food-item">
+        <img src="/pattern/miso.png" alt="Miso Soup">
+        <h3>Miso Soup</h3>
+        <p>Traditional Japanese soup made with miso paste, tofu, seaweed, and green onions. Served as a side dish.</p>
+      </div>
+      <div class="food-item">
+        <img src="pattern/okonomiyaki.png" alt="Okonomiyaki">
+        <h3>Okonomiyaki</h3>
+        <p>A savory Japanese pancake with cabbage, meat, seafood, and batter, cooked on a griddle and topped with sauce.</p>
+      </div>
+      <div class="food-item">
+        <img src="pattern/tonkatsu.png" alt="Tonkatsu">
+        <h3>Tonkatsu</h3>
+        <p>Breaded and deep-fried pork cutlet, served with shredded cabbage and tonkatsu sauce. Crispy outside, juicy inside.</p>
+      </div>
+      <div class="food-item">
+        <img src="pattern/omurice.png" alt="Omurice">
+        <h3>Omurice</h3>
+        <p>A Japanese dish of fried rice wrapped in a thin omelet, often topped with ketchup or sauce.</p>
+      </div>
+    </div>
+  </section>
+  <section class="architecture-section" id="architecture">
+    <div class= "architecture-content">
+        <h1>Architecture</h1>
+        <p>Japanese architecture beautifully blends tradition and modernity. Historic structures like Buddhist temples and wooden houses (minka) reflect values of simplicity, harmony with nature, and efficient use of space. Features such as sliding doors (shoji), tatami floors, and inner gardens highlight a deep appreciation for natural light and the use of emptiness as a design element.
+        In contrast, Japan’s modern architecture is bold and innovative. Contemporary architects like Tadao Ando and Kengo Kuma skillfully combine concrete, wood, and glass to create spaces that are minimalist, sustainable, and deeply connected to their surroundings. The balance between traditional aesthetics and cutting-edge design is what makes Japanese architecture so unique and inspiring.</p>
+    </div>
+        <div class="architecture-item">
+        <img src="pattern/building.jpg" alt="Modern Japonese building">
+        <img src="pattern/door.jpg" alt="Traditional Japanese sliding door">
+        <img src="pattern/house.jpg" alt="Japanese wooden house">
+    </div>
+  </section>
+  <section class="culture-section" id="culture">
+    <div class="culture-content">
+        <h1>Culture</h1>
+        <p>Bonsai, tea ceremony, and calligraphy are more than just arts; they are profound expressions of Japanese culture and philosophy. Rooted in centuries of tradition, these practices emphasize harmony, mindfulness, and respect, core values in Japanese society. Bonsai reflects the connection to nature and patience required to nurture life in miniature form, symbolizing balance and impermanence. The tea ceremony is a spiritual ritual that fosters calmness, etiquette, and appreciation for simplicity, reinforcing social bonds and mindfulness in everyday life. Calligraphy combines artistic expression with discipline, capturing beauty and meaning in each brushstroke. Together, they embody the Japanese ideals of wabi-sabi (finding beauty in imperfection and transience) and zen principles, weaving art, spirituality, and daily living into a harmonious cultural tapestry that continues to influence modern Japan.</p>
+    </div>
+  </section>
+  <section class="attraction-section" id="attractions">
+  <div class="attraction-content">
+    <h1>Attractions</h1>
+    <p>Explore some of the most unforgettable places I had the chance to visit during my journey through Japan. From ancient temples and peaceful parks to vibrant city streets, these attractions are more than just landmarks, they’re memories. Each one holds a story from my trip, offering a glimpse into the heart and soul of cities like Osaka, Kyoto, Nara, Nagoya, and Shiga.</p>
+  </div>
+ <div class="filter" id="filterButtons">
+  <button data-location="all" class="active">All</button>
+  <button data-location="osaka">Osaka</button>
+  <button data-location="nara">Nara</button>
+  <button data-location="kyoto">Kyoto</button>
+  <button data-location="shiga">Shiga</button>
+  <button data-location="nagoya">Nagoya</button>
+</div>
+<div class="carousel" id="attractionsCarousel"></div>
+</section>
+<section class="store-section" id="store">
+    <div class="store-content">
+        <h1>Stores</h1>
+        <p>Japan offers an unforgettable shopping experience, from budget fashion to hidden gems in second-hand stores and tech treasures. Here are some stores that you must visit!</p>
+    </div>
+    <div class="store-grid">
+        <div class="store-card">
+            <img src="pattern/uniqlo.jpeg">
+            <h3>Uniqlo</h3>
+            <p>Affordable, high-quality basics and stylish everyday wear. Uniqlo is a go-to brand across Japan for locals and tourists alike.</p>
+        </div>
+        <div class="store-card">
+            <img src="pattern/bookoff.jpg">
+            <h3>Book Off</h3>
+            <p>A second-hand treasure trove—books, games, clothes, and even collectible action figures in excellent condition at great prices.</p>
+        </div>
+        <div class="store-card">
+            <img src="pattern/camera.jpg">
+            <h3>Bic Camera</h3>
+            <p>A tech lover’s paradise: cameras, electronics, home appliances, cosmetics, and even sake — all tax-free for tourists.</p>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+    <p>&copy; 2025 My Travel Blog - All rights reserved.</p>
+</footer>
+   <script src="script.js"></script>
+</body>
+</html>
