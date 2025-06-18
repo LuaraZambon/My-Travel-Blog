@@ -1,3 +1,11 @@
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   window.scrollToSection = function(event, id) {
     event.preventDefault();
@@ -7,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
 
   function shuffleArray(array) {
     let arr = array.slice();
