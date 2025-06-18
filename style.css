@@ -10,10 +10,73 @@ html {
   scroll-behavior: smooth;
 }
 
-.body {
+body {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  z-index: 10;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #ad2220;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-links {
+    border-radius: 10px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+    padding: 20px;
+    opacity: 80%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    gap: 15px;
+    z-index: 9;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
 }
 
 .header-container {
@@ -45,7 +108,7 @@ html {
 }
 
 .nav-links li a {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -606,4 +669,149 @@ html {
 .site-footer p {
   margin: 0;
   font-size: 1.3rem;
+}
+
+@media (max-width: 1024px) {
+  .home-content h1 {
+    font-size: 10rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .about-wrapper {
+    margin: 0 auto;
+    bottom: 0;
+  }
+
+  .about-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tech-header {
+    margin-left: 0;
+  }
+
+  .tech-header h1,
+  .tech-header p {
+    text-align: center;
+  }
+
+  .architecture-content h1,
+  .architecture-content p {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 6rem;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+  }
+
+  .about-wrapper,
+  .about-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .flag {
+    width: 320px;
+    height: 320px;
+    left: -10px;
+  }
+
+  .tech-header h1 {
+    font-size: 4rem;
+  }
+
+  .tech-header p {
+    font-size: 1rem;
+  }
+
+  .tech-icons {
+    gap: 20px;
+  }
+
+  .food-section h1,
+  .culture-content h1,
+  .store-content h1,
+  .architecture-content h1 {
+    font-size: 4rem;
+  }
+
+  .subtitle,
+  .culture-content p,
+  .store-content p,
+  .architecture-content p {
+    font-size: 1.1rem;
+  }
+
+  .attraction-card {
+    width: 90%;
+    height: auto;
+  }
+
+  .attraction-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .store-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .store-card {
+    height: auto;
+  }
+
+  .store-card img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .about-text h1 {
+    font-size: 3rem;
+  }
+
+  .tech-header h1 {
+    font-size: 3rem;
+  }
+
+  .food-section h1,
+  .culture-content h1,
+  .store-content h1,
+  .architecture-content h1 {
+    font-size: 3rem;
+  }
+
+  .tech-box {
+    max-width: 100%;
+  }
+
+  .carousel {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
 }
