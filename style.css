@@ -543,7 +543,7 @@ body {
 
 .attraction-card img {
   width: 300px;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   border-radius: 12px; 
   margin-bottom: 15px;
@@ -564,9 +564,9 @@ body {
 
 .visit-button {
   display: inline-block;
-  width: 150px;
+  width: 120px;
   margin-bottom: 20px;
-  padding: 8px 10px;
+  padding: 5px 10px;
   border: 2px solid #ad2220;
   color: #ad2220;
   border-radius: 5px;
